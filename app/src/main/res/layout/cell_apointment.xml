@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:id="@+id/container">
 
     <ImageView
         android:id="@+id/img_photo"
@@ -19,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/img_photo"
-        app:layout_constraintStart_toStartOf="@+id/txt_body"
+        app:layout_constraintStart_toStartOf="@+id/txt_description"
         app:srcCompat="@android:drawable/ic_menu_my_calendar" />
 
     <TextView
@@ -31,14 +32,14 @@
         android:ellipsize="marquee"
         android:singleLine="true"
         app:layout_constraintBottom_toBottomOf="@+id/img_calendar"
-        app:layout_constraintEnd_toEndOf="@+id/txt_body"
+        app:layout_constraintEnd_toEndOf="@+id/txt_description"
         app:layout_constraintStart_toEndOf="@+id/img_calendar"
         app:layout_constraintTop_toTopOf="@+id/img_calendar"
         tools:text="10/10/2018" />
 
     <TextView
         style="@style/Text.Primary"
-        android:id="@+id/txt_body"
+        android:id="@+id/txt_description"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
